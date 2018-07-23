@@ -1,0 +1,9 @@
+title=Test Post
+type=post
+tags=blog,test,texy
+status=published
+@@@
+
+Hi everyone.
+
+**This is a "Texy":http://texy.info test.
