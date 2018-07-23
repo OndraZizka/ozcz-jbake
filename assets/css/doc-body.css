@@ -1,0 +1,354 @@
+/*
+Taken from GitHub's markdown-body.
+ */
+
+.doc-body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size:16px;
+    line-height:1.5;
+    word-wrap:break-word
+}
+.doc-body::before {
+    display:table;
+    content:""
+}
+.doc-body::after {
+    display:table;
+    clear:both;
+    content:""
+}
+.doc-body>*:first-child {
+    margin-top:0 !important
+}
+.doc-body>*:last-child {
+    margin-bottom:0 !important
+}
+.doc-body a:not([href]) {
+    color:inherit;
+    text-decoration:none
+}
+.doc-body .absent {
+    color:#cb2431
+}
+.doc-body .anchor {
+    float:left;
+    padding-right:4px;
+    margin-left:-20px;
+    line-height:1
+}
+.doc-body .anchor:focus {
+    outline:none
+}
+.doc-body p,.doc-body blockquote,.doc-body ul,.doc-body ol,.doc-body dl,.doc-body table,.doc-body pre {
+    margin-top:0;
+    margin-bottom:16px
+}
+.doc-body hr {
+    height:.25em;
+    padding:0;
+    margin:24px 0;
+    background-color:#e1e4e8;
+    border:0
+}
+.doc-body blockquote {
+    padding:0 1em;
+    color:#6a737d;
+    border-left:0.25em solid #dfe2e5
+}
+.doc-body blockquote>:first-child {
+    margin-top:0
+}
+.doc-body blockquote>:last-child {
+    margin-bottom:0
+}
+.doc-body kbd {
+    display:inline-block;
+    padding:3px 5px;
+    font-size:11px;
+    line-height:10px;
+    color:#444d56;
+    vertical-align:middle;
+    background-color:#fafbfc;
+    border:solid 1px #c6cbd1;
+    border-bottom-color:#959da5;
+    border-radius:3px;
+    box-shadow:inset 0 -1px 0 #959da5
+}
+.doc-body h1,.doc-body h2,.doc-body h3,.doc-body h4,.doc-body h5,.doc-body h6 {
+    margin-top:24px;
+    margin-bottom:16px;
+    font-weight:600;
+    line-height:1.25
+}
+.doc-body h1 .octicon-link,.doc-body h2 .octicon-link,.doc-body h3 .octicon-link,.doc-body h4 .octicon-link,.doc-body h5 .octicon-link,.doc-body h6 .octicon-link {
+    color:#1b1f23;
+    vertical-align:middle;
+    visibility:hidden
+}
+.doc-body h1:hover .anchor,.doc-body h2:hover .anchor,.doc-body h3:hover .anchor,.doc-body h4:hover .anchor,.doc-body h5:hover .anchor,.doc-body h6:hover .anchor {
+    text-decoration:none
+}
+.doc-body h1:hover .anchor .octicon-link,.doc-body h2:hover .anchor .octicon-link,.doc-body h3:hover .anchor .octicon-link,.doc-body h4:hover .anchor .octicon-link,.doc-body h5:hover .anchor .octicon-link,.doc-body h6:hover .anchor .octicon-link {
+    visibility:visible
+}
+.doc-body h1 tt,.doc-body h1 code,.doc-body h2 tt,.doc-body h2 code,.doc-body h3 tt,.doc-body h3 code,.doc-body h4 tt,.doc-body h4 code,.doc-body h5 tt,.doc-body h5 code,.doc-body h6 tt,.doc-body h6 code {
+    font-size:inherit
+}
+.doc-body h1 {
+    padding-bottom:0.3em;
+    font-size:2em;
+    border-bottom:1px solid #eaecef
+}
+.doc-body h2 {
+    padding-bottom:0.3em;
+    font-size:1.5em;
+    border-bottom:1px solid #eaecef
+}
+.doc-body h3 {
+    font-size:1.25em
+}
+.doc-body h4 {
+    font-size:1em
+}
+.doc-body h5 {
+    font-size:0.875em
+}
+.doc-body h6 {
+    font-size:0.85em;
+    color:#6a737d
+}
+.doc-body ul,.doc-body ol {
+    padding-left:2em
+}
+.doc-body ul.no-list,.doc-body ol.no-list {
+    padding:0;
+    list-style-type:none
+}
+.doc-body ul ul,.doc-body ul ol,.doc-body ol ol,.doc-body ol ul {
+    margin-top:0;
+    margin-bottom:0
+}
+.doc-body li {
+    word-wrap:break-all
+}
+.doc-body li>p {
+    margin-top:16px
+}
+.doc-body li+li {
+    margin-top:.25em
+}
+.doc-body dl {
+    padding:0
+}
+.doc-body dl dt {
+    padding:0;
+    margin-top:16px;
+    font-size:1em;
+    font-style:italic;
+    font-weight:600
+}
+.doc-body dl dd {
+    padding:0 16px;
+    margin-bottom:16px
+}
+.doc-body table {
+    display:block;
+    width:100%;
+    overflow:auto
+}
+.doc-body table th {
+    font-weight:600
+}
+.doc-body table th,.doc-body table td {
+    padding:6px 13px;
+    border:1px solid #dfe2e5
+}
+.doc-body table tr {
+    background-color:#fff;
+    border-top:1px solid #c6cbd1
+}
+.doc-body table tr:nth-child(2n) {
+    background-color:#f6f8fa
+}
+.doc-body table img {
+    background-color:transparent
+}
+.doc-body img {
+    max-width:100%;
+    box-sizing:content-box;
+    background-color:#fff
+}
+.doc-body img[align=right] {
+    padding-left:20px
+}
+.doc-body img[align=left] {
+    padding-right:20px
+}
+.doc-body .emoji {
+    max-width:none;
+    vertical-align:text-top;
+    background-color:transparent
+}
+.doc-body span.frame {
+    display:block;
+    overflow:hidden
+}
+.doc-body span.frame>span {
+    display:block;
+    float:left;
+    width:auto;
+    padding:7px;
+    margin:13px 0 0;
+    overflow:hidden;
+    border:1px solid #dfe2e5
+}
+.doc-body span.frame span img {
+    display:block;
+    float:left
+}
+.doc-body span.frame span span {
+    display:block;
+    padding:5px 0 0;
+    clear:both;
+    color:#24292e
+}
+.doc-body span.align-center {
+    display:block;
+    overflow:hidden;
+    clear:both
+}
+.doc-body span.align-center>span {
+    display:block;
+    margin:13px auto 0;
+    overflow:hidden;
+    text-align:center
+}
+.doc-body span.align-center span img {
+    margin:0 auto;
+    text-align:center
+}
+.doc-body span.align-right {
+    display:block;
+    overflow:hidden;
+    clear:both
+}
+.doc-body span.align-right>span {
+    display:block;
+    margin:13px 0 0;
+    overflow:hidden;
+    text-align:right
+}
+.doc-body span.align-right span img {
+    margin:0;
+    text-align:right
+}
+.doc-body span.float-left {
+    display:block;
+    float:left;
+    margin-right:13px;
+    overflow:hidden
+}
+.doc-body span.float-left span {
+    margin:13px 0 0
+}
+.doc-body span.float-right {
+    display:block;
+    float:right;
+    margin-left:13px;
+    overflow:hidden
+}
+.doc-body span.float-right>span {
+    display:block;
+    margin:13px auto 0;
+    overflow:hidden;
+    text-align:right
+}
+.doc-body code,.doc-body tt {
+    padding:0.2em 0.4em;
+    margin:0;
+    font-size:85%;
+    background-color:rgba(27,31,35,0.05);
+    border-radius:3px
+}
+.doc-body code br,.doc-body tt br {
+    display:none
+}
+.doc-body del code {
+    text-decoration:inherit
+}
+.doc-body pre {
+    word-wrap:normal
+}
+.doc-body pre>code {
+    padding:0;
+    margin:0;
+    font-size:100%;
+    word-break:normal;
+    white-space:pre;
+    background:transparent;
+    border:0
+}
+.doc-body .highlight {
+    margin-bottom:16px
+}
+.doc-body .highlight pre {
+    margin-bottom:0;
+    word-break:normal
+}
+.doc-body .highlight pre,.doc-body pre {
+    padding:16px;
+    overflow:auto;
+    font-size:85%;
+    line-height:1.45;
+    background-color:#f6f8fa;
+    border-radius:3px
+}
+.doc-body pre code,.doc-body pre tt {
+    display:inline;
+    max-width:auto;
+    padding:0;
+    margin:0;
+    overflow:visible;
+    line-height:inherit;
+    word-wrap:normal;
+    background-color:transparent;
+    border:0
+}
+.doc-body .csv-data td,.doc-body .csv-data th {
+    padding:5px;
+    overflow:hidden;
+    font-size:12px;
+    line-height:1;
+    text-align:left;
+    white-space:nowrap
+}
+.doc-body .csv-data .blob-num {
+    padding:10px 8px 9px;
+    text-align:right;
+    background:#fff;
+    border:0
+}
+.doc-body .csv-data tr {
+    border-top:0
+}
+.doc-body .csv-data th {
+    font-weight:600;
+    background:#f6f8fa;
+    border-top:0
+}
+a {
+    -webkit-text-decoration-skip:ink;
+    text-decoration-skip:ink
+}
+.octicon {
+    fill:currentColor
+}
+.doc-body img:not(.emoji) {
+    padding:3px;
+    border:1px solid #e5e5e5;
+    box-sizing:border-box
+}
+.doc-body iframe {
+    width:100%;
+    border:0
+}

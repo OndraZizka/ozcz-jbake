@@ -10,10 +10,11 @@
 
     <#assign rootPath><#if (content.rootpath)??>${content.rootpath}</#if></#assign>
 
-    <link href="${rootPath}css/bootstrap.min.css" rel="stylesheet">
-    <link href="${rootPath}css/asciidoctor.css" rel="stylesheet">
-    <link href="${rootPath}css/base.css" rel="stylesheet">
-    <link href="${rootPath}css/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" href="${rootPath}css/bootstrap.min.css">
+    <link rel="stylesheet" href="${rootPath}css/asciidoctor.css">
+    <link rel="stylesheet" href="${rootPath}css/base.css">
+    <link rel="stylesheet" href="${rootPath}css/doc-body.css">
+    <link rel="stylesheet" href="${rootPath}css/prettify.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

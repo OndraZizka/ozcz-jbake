@@ -8,7 +8,7 @@
 
 	<p><em>${content.date?string("dd MMMM yyyy")}</em></p>
 
-	<p>${content.body}</p>
+	<div class="doc-body">${content.body}</div>
 
 	<hr />
 
