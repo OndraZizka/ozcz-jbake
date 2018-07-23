@@ -8,3 +8,5 @@ http://www.joern-karthaus.de/
 
 Cteni (i o JBake):
 https://siddheshrane.github.io/
+
+https://www.thenewdynamic.org/tools/helper/

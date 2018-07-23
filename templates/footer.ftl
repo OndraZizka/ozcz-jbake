@@ -1,14 +1,15 @@
 
+    <!-- Facebook comments -->
+    <div class="fb-comments" data-href="https://www.zizka.ch/about.html" data-width="800" data-numposts="5"></div>
+
     </div>
     <div id="push"></div>
 
-    <!-- Facebook comments -->
-    <div class="fb-comments" data-href="https://www.zizka.ch/about.html" data-width="800" data-numposts="5"></div>
 </div>
 
 <div id="footer">
     <div class="container">
-        <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
+        <p class="muted credit">&copy; 2018 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
     </div>
 </div>
 

@@ -11,7 +11,7 @@
 
         <#list published_posts as post>
         <item>
-            <title><#escape x as x?xml>${post.title}</#escape></title>
+            <title>${post.title}</title>
             <link>${config.site_host}/${post.uri}</link>
             <pubDate>${post.date?string("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
             <guid isPermaLink="false">${post.uri}</guid>

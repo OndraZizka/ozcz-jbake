@@ -7,16 +7,18 @@
 	</div>
 	<#list posts as post>
   		<#if (post.status == "published")>
-  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>
+  			<a href="${post.uri}"><h3>${post.title}</h3></a>
 
-  			<p>${post.date?string("dd MMMM yyyy")}</p>
+  			<div class="date"><em>${post.date?string("yyyy-MM-dd")}</em></div>
 
-  			<p>${post.body}</p>
+  			<div class="doc-body">${post.body}</div>
   		</#if>
   	</#list>
 
 	<hr />
 
+	<!--
 	<p>Older posts are available in the <a href="${content.rootpath}${config.archive_file}">archive</a>.</p>
+	-->
 
 <#include "footer.ftl">
