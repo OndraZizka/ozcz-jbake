@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title><#if (content.title)??>${content.title}<#else>Ondřej Žižka</#if></title>
+    <title><#if (content.title)??>${content.title} - Ondřej Žižka<#else>Ondřej Žižka</#if></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="My personal web">
     <meta name="author" content="Ondřej Žižka">
@@ -29,4 +29,4 @@
     <link rel="shortcut icon" href="${rootPath}favicon.ico">
 </head>
 <body onload="prettyPrint()">
-<div id="wrap">
+    <div id="wrap">

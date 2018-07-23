@@ -7,7 +7,7 @@
 	</div>
 
 	<!--<ul>-->
-		<#list published_posts as post>
+	<#list published_posts as post>
 		<#if (last_month)??>
 			<#if post.date?string("MMMM yyyy") != last_month>
 				</ul>
@@ -21,7 +21,7 @@
 
 		<li>${post.date?string("dd")} - <a href="${content.rootpath}${post.uri}">${post.title}</a></li>
 		<#assign last_month = post.date?string("MMMM yyyy")>
-		</#list>
+	</#list>
 	</ul>
 
 <#include "footer.ftl">

@@ -13,9 +13,9 @@
     </div>
 </div>
 
-<script src="<#if (content.rootpath)??>${content.rootpath}</#if>js/jquery-1.11.1.min.js"></script>
-<script src="<#if (content.rootpath)??>${content.rootpath}</#if>js/bootstrap.min.js"></script>
-<script src="<#if (content.rootpath)??>${content.rootpath}</#if>js/prettify.js"></script>
+<script src="${content.rootpath!}js/jquery-1.11.1.min.js"></script>
+<script src="${content.rootpath!}js/bootstrap.min.js"></script>
+<script src="${content.rootpath!}js/prettify.js"></script>
 
 <!-- Facebook comments -->
 <div id="fb-root"></div>
