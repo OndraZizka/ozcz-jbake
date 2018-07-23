@@ -14,6 +14,7 @@
           <ul class="nav navbar-nav">
             <li><a href="<#if (content.rootpath)??>${content.rootpath}</#if>index.html">Home</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}</#if>about.html">About Me</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}</#if>${config.archive_file}">Archive</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}</#if>${config.feed_file}">RSS feed</a></li>
             <!--
             <li class="dropdown">
