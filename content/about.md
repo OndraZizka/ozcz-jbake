@@ -8,6 +8,13 @@ I am. For more info, see:
 
 * My [LinkedIn profile](https://www.linkedin.com/in/ondrazizka/)
 * My [GitHub account](https://github.com/OndraZizka/)
+* My [StackOverflow account](https://stackexchange.com/users/49078)
+
+<a href="https://stackexchange.com/users/49078">
+  <img src="https://stackexchange.com/users/flair/49078.png" alt="Ondra Žižka on Stack Exchange" title="Ondra Žižka on Stack Exchange" width="208" height="58">
+</a>
+<br>
+<a target="_blank" href="https://www.openhub.net/accounts/pekarna?ref=sample"><img alt="Open Hub profile for Ondrej Zizka" src="https://www.openhub.net/accounts/pekarna/widgets/account_detailed?format=gif&amp;ref=sample" width="212" height="35" border="0"></a>
 
 ## Some of my hobby projects
 
