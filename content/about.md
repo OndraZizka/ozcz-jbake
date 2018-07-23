@@ -2,7 +2,7 @@ title=About me
 date=2018-07-21
 type=page
 status=published
-~~~~~~~
+@@@
 
 I am. For more info, see:
 
