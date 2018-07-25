@@ -8,14 +8,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="${content.rootpath!}">Ondřej Žižka</a>
+          <a class="navbar-brand" href="${config.site_baseUrl}">Ondřej Žižka</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="${content.rootpath!}index.html">Home</a></li>
-            <li><a href="${content.rootpath!}about.html">About Me</a></li>
+            <li><a href="${content.rootpath!}index.html">Blog</a></li>
             <li><a href="${content.rootpath!}${config.archive_file}">Archive</a></li>
+            <li><a href="${content.rootpath!}${config.tag_path}">Tags</a></li>
+
+            <li><a href="${content.rootpath!}about.html">About Me</a></li>
             <li><a href="${content.rootpath!}${config.feed_file}">RSS feed</a></li>
+            <li><a href="${content.rootpath!}${config.sitemap_file}">Sitemap</a></li>
             <!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
