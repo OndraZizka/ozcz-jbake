@@ -1,0 +1,588 @@
+title=Speciální případy
+@@@
+
+Speciální případy
+==============
+
+.[myclass]
+toto je odstavec
+ s vice radky
+
+
+[* obrazek.jpg .(alternativni text){float: left; title: atribut title; lang: en} *]
+
+10 % a 20 %
+
+toto je odstavec .[myclass]
+ s vice radky
+
+
+toto je odstavec
+ s vice radky .[myclass]
+
+
+toto je odstavec
+ s vice radky
+.[myclass]
+
+
+m^2 a m_2 a r_1^3
+
+  {{test:test}}
+{{aa}} {{bbb}}
+
+
+>>>>>
+
+> test1
+>> test2
+>>>> test3
+> test4
+>>
+>>>>>
+>
+
+> test
+>>>> test
+> test
+
+*my+ **strong*** konec** jo?*
+
+*a*
+
+**nested .(** asterix)**
+
+escape \**asterix**
+
+"hello .(test (vnorene\) zavorky)"
+
+{{ script }}
+
+texyscript {{ texy }}
+texyscript2 {{ texy (test) }}
+
+<embed> <wbr>
+
+
+| vyraz \| test  | test2
+
+
+<pre>
+speciální
+test
+</pre>
+
+
+<pre>
+
+speciální
+test
+
+</pre>
+
+
+emoticon :-)))
+
+obrazek [* obr.jpg *]:[* popup.php?img=obr-big.jpg *]
+
+[* obr.jpg .{alt:alternative; title:title text }*]:[* popup.php?img=obr-big.jpg *] *** Nějaký popisek pod obrázkem
+
+absolutní obr [* http://www.texy.info/images/buttons/texy-powered.png *] test
+
+[* 0 *] nebo **0**
+
+`slovo:[url]` a sl0ovo:[url] a slovo_:[url] a sl-aovo:[url]
+
+Neexistujici &entita;
+
+Specialní &amp;image;
+
+Texy! is sexy!
+==============
+
+[*texy-small.gif<] Texy! je konvertor čistého textu do formátované podoby. Jeho nedílnou součástí je soubor jednoduchých pravidel, kterými se konverze řídí.
+
+Texy! je jedním z **nejkomplexnějších** "formátovačů". Umí zpracovávat obrázky, odkazy, seznamy, tabulky ale také CSS((Kaskádové styly)).
+
+Systém také formátuje text v souladu s typografickými pravidly. Zvláštní pozornost je věnována národním specifikům. Texy! přetahuje jednopísmenné předložky a spojky z konců řádků na následující řádek, rozděluje příliš dlouhá slova podle slabik atd.
+
+Systém je napsán plně objektově v PHP. Bez zásahu do zdrojového kódu je možné nastavit celou řadu parametrů a přizpůsobit (resp. omezit) chování podle aktuálních potřeb.
+
+Copyright
+---------
+
+Texy! (C) "David Grudl (dgx)":http://www.dgx.cz, 2003-2004
+
+A First Level Header
+####################
+
+A Second Level Header
+*********************
+
+A Third Level Header
+====================
+
+A Fourth Level Header
+---------------------
+
+#### Největší titulek
+
+### střední titulek
+
+## malý titulek
+
+---
+
+Odstavce textu
+**************
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur turpis enim, placerat tincidunt, tincidunt ac, fringilla et, mauris. .(test){text-align:right}
+ A následují řádky
+ které Texy! oddělí elementem `<br> &nbsp;`
+
+Curabitur quam justo, hendrerit a, mattis ut, ultrices at, dui. In mollis. Ut pellentesque erat vehicula nunc. Ut ultricies. Nulla nunc velit, consequat vel, laoreet in, blandit et, eros.
+
+**Odstavec zarovnaný *doprava.** Lorem* ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur turpis enim, placerat tincidunt, tincidunt ac, fringilla et, mauris. .>
+
+**Odstavec psaný modrou "barvou.** Curabitur":link quam justo, hendrerit a, mattis ut, ultrices at, dui. In mollis. Ut pellentesque erat vehicula nunc. Ut ultricies. Nulla nunc velit, consequat vel, laoreet in, blandit et, eros. .{color:blue}
+
+---
+
+/--texysource
+Text mezi @notexy ..... a @ nebude Texy *formátovat*
+  &nbsp; <br />
+\--
+
+Neformátovaný text
+******************
+
+/--code
+  function reImage($matches) {
+    $content = $matches[1];
+    $align = $matches[5];
+    $href = $matches[6];
+  }
+  &nbsp; <br />
+  &amp;amp;
+\-- xxx
+
+---
+
+Vypnutí Texy
+************
+
+/--html
+Text mezi @notexy ..... a @ nebude Texy *formátovat*
+  &nbsp; <br />
+\--
+
+s odřádkováním
+--------------
+
+/--text
+Text mezi @notexy ..... a @ nebude Texy *formátovat*
+  &nbsp; <br />
+\--
+
+---
+
+Citace
+******
+
+> Myslím tudíž jsem
+>:http://www.dgx.cz
+
+---
+
+Horizontální čára
+*****************
+
+---
+
+***
+
+
+Obrázky
+=======
+
+Příklad:
+[*texy.gif*]
+
+Zarovnání doleva nebo doprava
+=============================
+
+[*texy-small.gif<] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur turpis enim, placerat tincidunt, tincidunt ac, fringilla et, mauris.
+
+[*texy-small.gif>] Curabitur quam justo, hendrerit a, mattis ut, ultrices at, dui. In mollis. Ut pellentesque erat vehicula nunc. Ut ultricies. Nulla nunc velit, consequat vel, laoreet in, blandit et, eros.
+
+Aktivní obrázky
+===============
+
+Obrázek, který se mění při přejetí myší. Obrázky se oddělují znakem |
+[* texy.jpg | texy-over.jpg *]
+
+Odkazy
+======
+
+Tento obrázek je odkaz [*texy-small.gif*]:http://www.dgx.cz
+
+Po kliknutí na tento obrázek se objeví jeho větší verze [* texy-small.gif *]:[* texy-big.jpg *]
+
+Nebo jednodušeji [* texy.gif *]::
+
+
+Obrázek s popiskou
+==================
+
+[* texy.gif <]:[home] *** popiska s **plným** formátováním
+
+---
+
+Modifikátory
+============
+
+Lze použít také pro definici alternativního textu
+
+[*texy-small.gif .(alternativní text)[class]*]
+
+
+Formátovací příkazy
+===================
+
+- **tučné písmo**
+- *kurzíva* nebo //kurzíva//
+- >>citovaný zdroj<<:zdroj
+- ^^horní index^^ 10m^^2^^
+- __spodní index__
+- ++vložený text++
+- --odstraněný text--
+
+- `.[php]`
+- `code`
+
+`code .[php]`
+``code .[php]``
+
+this is ''no**texy**'' code
+
+Spolu s formátovacími příkazy lze použít i modifikátory. Ty se zapisují před uzavírací znak: **tučné zelené písmo .{color:green}**
+
+Citace mohou obsahovat i informaci o zdroji, např. >>Lorem Ipsum Dolores<<:www.lipsum.com
+
+---
+
+Jak vytvářet odkazy se dozvíte na "této stránce":links
+
+Vypnutí Texy
+============
+
+Text mezi hranatými závorkami a obrácenými uvozovkami <<< nebude Texy *formátovat*  >>>
+
+Odkazy
+======
+
+Odkaz se vytváří označením textu do uvozovek následovaných dvojtečkou a URL
+
+Příklady:
+- Už jste četli "La Trine":[la trine]?
+- automatický odkaz [la trine]
+- Napište na "email":dave@example.com
+- podívejte se na tento "obrázek":[*texy-big.jpg*]
+- lze zapsat i pomocí reference [obrazek]
+- quick link:[www.dgx.cz]
+
+A nakonec klikací obrázek:
+[*texy-small.gif*]:[*texy-big.jpg*]
+
+
+[la trine]: http://www.dgx.cz/trine/ text odkazu .(title)
+[dave]: dave@example.com text odkazu
+[obrazek]: [*texy-big.jpg*]
+
+Odrážkový seznam
+================
+
+*   Red
+*   Green
+*   Blue
+
++   Red
++   Green
++   Blue
+
+-   Red
+
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur turpis enim, placerat tincidunt, tincidunt ac, fringilla et, mauris.
+
+  Curabitur quam justo, hendrerit a, mattis ut, ultrices at, dui. In mollis. Ut pellentesque erat vehicula nunc. Ut ultricies. Nulla nunc velit, consequat vel, laoreet in, blandit et, eros.
+
+-   Green
+-   Blue
+
+
+Číslovaný seznam
+================
+
+3)  Bird
+2)  McHale
+3)  Parish
+
+a)  Bird
+b)  McHale
+c)  Parish
+
+A)  Bird
+B)  McHale
+C)  Parish
+
+IV) Bird
+V)  McHale
+VI) Parish
+
+
+Víceúrovňový seznam
+===================
+
+a)  Bird
+  I.  Bird
+    +   Red
+    +   Green
+    +   Blue
+  II.  McHale
+  III.  Parish
+b)  McHale
+c)  Parish
+      1)  Bird
+      2)  McHale
+      3)  Parish
+
+
+---
+
+Vysvětlující seznam
+===================
+
+.{color:red}
+triangl:   .{color:blue}
+    - trojúhelník      .{color:green}
+    - neladěný bicí hudební nástroj
+    - tringulační věž
+
+Koncert Divoký Bill:
+    - termín: 9. 12. 2004
+    - místo: Hala Vodová, Brno
+    - Cena: 260,- Kč
+
+
+Oddělený seznam:
+    * položka
+      text
+
+      text
+    * položka
+
+
+
+Formátovací modifikátory
+========================
+
+Lze použít tyto druhy modifikátorů:
+- (titulek) popisné, přidají objektu titulek
+- [class1 class2 #id] určující třídu a ID
+- {class:blue} pro přímý zápis stylu
+- horizontální zarovnání:
+  - doleva <
+  - doprava >
+  - vycentrovaný <>
+  - do bloku =
+
+- vertikální zarovnání: (jen u tabulek)
+  - nahoru ^
+  - na střed -
+  - dolů _
+
+---
+
+Použití
+=======
+
+Používá se postfixová syntaxe, modifikátory se píší na konec "bloku":block nebo fráze. Před modifikátorem **musí být tečka**.
+
+### malý centrovaný titulek .=
+## zelený titulek .{color:green}
+
+Část textu lze ovlivnit modifikátorem tak, že ji uzavřeme do uvozovek a modifikátor vložíme těsně před pravou uvozovku: "Text označený uvozovkami .(titulek)[about]"
+
+V "seznamech":lists modifikátor ovlivňuje příslušnou položku. Chcete-li použít modifikátor pro celý seznam, vložte jej těsně před něj:
+
+.{color:blue}
+- první položka bude zelená .{color:green}
+- další jsou modré
+- třetí položka s titulkem .(titulek)
+
+U "tabulek":tables, stejně jako u seznamů, můžete použít zápisu před tabulkou pro ovlivnění celé tabulky.
+
+Automatické úpravy textu
+========================
+
+- rozdělení velmi dlouhých slov podle českých pravidel. Příklad: nejneobhospodařovávatelnějšími
+- klikatelné adresy www.dgx.cz, dave@dgx.cz  xxx@x.cz
+- "české" 'typografické' uvozovky
+- pomlčka vs. spojovník: 10-15 vs. česko-slovenský
+- typografický křížek u rozměrů 10 x 20
+- nedělitelné mezery u telefonních čísel +420 776 552 046
+- vkládání nezalomitelných mezer za jednopísmenné předložky
+- zkratky s vysvětlivkou PGP((Pretty Good Privacy))
+- náhrady(TM) nebo(R) za příslušné (C)entity (EUR)
+- zachování entit &amp;
+- a další...
+
+a --> b <--> c <-- d ===> e
+
+Jednoduchá tabulka
+==================
+
+| první sloupec | druhý | třetí
+| xx            | yy    | zz
+
+
+Tabulka s hlavičkou
+===================
+
+|== tabulka ==|
+|-----------------------------
+| jméno | příjmení | věk
+|----------------------------
+| Jan | Novák | 33
+| Petr | Svoboda | 24
+
+|== tabulka ==|
+| jméno | příjmení | věk
+|----------------------------
+| Jan | Novák | 33
+| Petr | Svoboda | 24
+
+| jméno | příjmení | věk
+|----------------------------
+| Jan | Novák | 33
+| Petr | Svoboda | 24
+
+| jméno | příjmení | věk
+| Jan | Novák | 33
+|----------------------------
+| Petr | Svoboda | 24
+
+
+|-----------------------------
+| jméno | příjmení | věk
+|----------------------------
+
+Libovolné pole lze označit jako hlavičku užitím znaku * ihned po znaku |
+
+|* Jméno | Jiří
+|* Příjmení | Memphiskapoleus
+|* Věk | 74
+
+---
+
+Formátování pomocí modifikátorů
+===============================
+
+
+.{text-align:center}
+|-----
+|* příjmení | .< věk k 1.1.2004 .>| .{font-style:italic}
+|-----
+| Novák .{color: blue}| 33
+| Svoboda | 24
+
+Modifikátory:
+- tabulky - ještě před tabulkou
+- řádku - je umístěný na začátku řádku
+- sloupce - je umístěný hned po značce |
+- políčka - je umístěný před následující značkou |
+
+Další informace o modifikátorech najdete v sekci "modifikátory":modifiers
+
+[* 1/galaxy-quest.jpg >]
+
+Když mi pondělní ráno zpestřila snímkem "Truman Show":[truman],
+byl jsem příjemně překvapen.
+Přeci jen, v 9.30 bych na
+ tele-tele-novele-TV něco
+ takového nečekal.
+Dobře utajený film týdne, říkal jsem si.
+
+A ejhle! Zítra ráno o půl desáté vytahují další eso z rukávu: "Galaxy Quest":[galaxy]. Jako by se snažili říct: "Sorry za ten Titanic" :-)
+
+<blockquote cite="http://spac.blog.sme.sk/c/1050/Na-konci-s-dychom.html"><p>... ... ...</p>
+<p><a href="http://spac.blog.sme.sk/c/1050/Na-konci-s-dychom.html">Na konci s dychom</a>, <a href="http://spac.blog.sme.sk/">Peter Spáč</a></p></blockquote>
+<p class="xx">Včera som kamošovi spomínal, že komentovať Smer mi nestojí za námahu, ale toto som musel blognúť.</p>
+
+Demonstace schopnosti vložit HTML kód
+- je možné programově blokovat každý element
+- je možné blokovat i jednotlivé atributy
+- výsledný kód je XHTML validní (všimněte si chybějících uvozovek u atributů ve značce form)
+
+<form method=post action="zpravy.php" id=blabla>
+ <FIELDSET><legend>Kontaktní formulář</legend>
+  <p><label for="jmeno">jméno:</label> <input size="25" name="jmeno" id="jmeno" type="text" onfocus="if(this.value=='jméno')this.value=''" value="jméno" /></p>
+  <p><label for="mail">e-mail:</label> <input size="25" name=xmail id="mail" type="text" onfocus="if(this.value=='e-mail')this.value=''" value="e-mail" /></p>
+  <p><label>text: </label><textarea name="text" id="text" rows="1" cols="1" style="vertical-align:top" onfocus="if(this.value=='text')this.value=''">text</textarea></p>
+  <p><input type="submit" name="odeslat" value="Odeslat"/></p>
+ </fieldset>
+</form>
+
+tohle je <form method="post" action="odeslani-zpravy.php"
+id="kontform" onsubmit="return checkme()"> konec </form>
+
+
+[truman]: http://www.imdb.com/title/tt0120382/
+[galaxy]: http://www.imdb.com/title/tt0177789/
+
+
+funkce strlen:[php], "objektově orientované programování":[google] a "Niklaus Wirth":[wikipedia]
+
+[google]: http://www.google.com/search?q=%s
+[php]: http://php.net/%s
+[wikipedia]: http://en.wikipedia.org/wiki/Special:Search?search=%s
+
+První <!-- komentář -->  <!--[ komentář2 ]-->
+
+/--html
+<p>
+<!-- komentář -->
+\--
+
+Šlitr-Suchý Šlitr--Suchý
+
+123-456
+
+456--456
+
+456 --456
+
+7869-- 4646
+
+Šlitr-- Suchý
+
+Šlitr --Suchý
+
+Šlitr -- Suchý
+
+Šlitr - Suchý
+
+
+321-654-987
+
+- (phone) number 1 123 123 123
+- (phone) number 1 123 123
+- number 1 123
+
+**email@email.cz**
+
+**www.example.com**
+
+"www.example.com/adresa/dlouha/moc.php":www.dgx.cz
+
+m^-2
