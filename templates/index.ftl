@@ -9,7 +9,7 @@
 	</div>
 	<#list posts as post>
   		<#if (post.status == "published")>
-  			<a href="${post.uri?url}"><h3>${post.title}</h3></a>
+  			<a href="${post.uri}"><h3>${post.title}</h3></a>
 
   			<div class="date"><em>${post.date?string("yyyy-MM-dd")}</em></div>
 
