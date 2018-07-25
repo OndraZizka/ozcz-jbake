@@ -14,6 +14,7 @@ I am. For more info, see:
 
 ## Some of my hobby projects
 
+  * [JBake](http://jbake.org/) - I have chimed in, added support for Texy. Hope they will merge some of my PRs.
   * [CSV Cruncher](https://github.com/OndraZizka/csv-cruncher) - Use your CSV files as SQL tables.
   * [JUnitDiff](https://github.com/OndraZizka/junitdiff) - Create comprehensive brief comparisons of test runs.
   * [IRC Appender](https://github.com/OndraZizka/irc-appender) - Print Java logging messages from `java.util.logging` to IRC.
