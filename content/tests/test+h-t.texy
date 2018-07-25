@@ -1,0 +1,11 @@
+title=Test Post in Texy, with header, with type, with status
+type=post
+status=published
+@@@
+
+Hi everyone.
+
+**This** is a "Texy":http://texy.info test.
+
+Blah
+

@@ -5,6 +5,8 @@ http://luiyo.net/blog/
 http://www.jdmartinho.com/blog/
 https://manik.magar.me/
 http://www.joern-karthaus.de/
+http://www.baeldung.com/java-xpath
+
 
 Cteni (i o JBake):
 https://siddheshrane.github.io/
