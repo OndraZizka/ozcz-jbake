@@ -26,17 +26,16 @@ Inspiration
 ============
 
 
-Nice designs:
-
-http://www.ute-camper.co.uk/
-http://luiyo.net/blog/
-http://www.jdmartinho.com/blog/
-https://manik.magar.me/
-http://www.joern-karthaus.de/
-http://www.baeldung.com/java-xpath
+#### Nice designs:
 
 
-Reading (including about JBake):
-https://siddheshrane.github.io/
+* http://www.ute-camper.co.uk/
+* http://luiyo.net/blog/
+* http://www.jdmartinho.com/blog/
+* https://manik.magar.me/
+* http://www.joern-karthaus.de/
+* http://www.baeldung.com/java-xpath
 
-https://www.thenewdynamic.org/tools/helper/
+#### Reading (including about JBake):
+* https://siddheshrane.github.io/
+* https://www.thenewdynamic.org/tools/helper/
