@@ -1,14 +1,26 @@
 How to build
 ============
 
+```
+JBAKE_BASED=$HOME/uw/oz.cz/jbake-based
+
 ## Run the Texy converter
 docker run --rm -p 8022:80 ondrazizka/texy-service:latest
-cd .../jbake-based;
+cd $JBAKE_BASED;
 ## Remove the old output and rebuild all
 rm -rf output/ cache/ && jbake -b
-TARGET_DIR=../oz.cz/github.io/
-cp -r output/* $TARGET_DIR
+
+## Update the web
+TARGET_DIR=../github.io/
 cd $TARGET_DIR
+git co master
+git pull
+cd -
+cp -rf output/* $TARGET_DIR
+cd $TARGET_DIR
+git commit -am 'Update'
+git push origin master
+```
 
 Inspiration
 ============
