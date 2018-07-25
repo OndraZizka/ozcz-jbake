@@ -1,3 +1,5 @@
+<#setting url_escaping_charset='UTF-8'><#-- JBake issue #495 -->
+
 <#include "header.ftl">
 
 	<#include "menu.ftl">
