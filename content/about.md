@@ -36,3 +36,6 @@ Once I had a spectacular site, a blogging platform written in PHP, then I migrat
 But I didn't have time to keep up with ever changing environment, so I migrated to [JBake](https://jbake.org) and static files.
 
 If you're looking for the former content, I will add it here once I add JTexy support to JBake.
+*Edit:* I have added JTexy support to JBake :) However, it doesn't generate directory indexes.
+I need to implement [this](https://github.com/jbake-org/jbake/issues/497).
+Until then, the pages are only available in the loooong listing in the [home page](/).
