@@ -8,8 +8,11 @@
 		<h2>Recent posts</h2>
 	</div>
 
+
     <#assign MAX_POSTS = 30>
-	<#list posts[0..*MAX_POSTS] as post>
+	<#list posts[0..*MAX_POSTS]>
+    <div class="document-list recent">
+        <#items as post>
         <#if (post.status == "published")>
             <div class="document post">
                 <div class="date"><em>${post.date?string("yyyy-MM-dd")}</em></div>
@@ -18,9 +21,12 @@
 
                 <div class="doc-body">${post.body}</div>
             </div>
-        	<hr />
+        	<hr class="post-separator" />
   		</#if>
+        </#items>
+    </div>
   	</#list>
+
 
 
 	<div>Older posts are available in the <a href="${content.rootpath}${config.archive_file}">archive</a>.</div>

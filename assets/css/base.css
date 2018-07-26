@@ -71,3 +71,13 @@ a { color: #0366d6; }
     width: 1px;
     top: 3px;
 }
+
+/** Posts separator. */
+.document-list hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid limegreen; /* dodgerblue */
+    margin: 1em 0;
+    padding: 0;
+}
