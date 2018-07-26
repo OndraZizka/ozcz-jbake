@@ -36,6 +36,9 @@ Inspiration
 * http://www.joern-karthaus.de/
 * http://www.baeldung.com/java-xpath
 
-#### Reading (including about JBake):
+#### Reading about static webs (including about JBake):
 * https://siddheshrane.github.io/
 * https://www.thenewdynamic.org/tools/helper/
+* [Why Static Site Generators Are The Next Big Thing](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
+* [CSS n-th](https://css-tricks.com/how-nth-child-works/)
+
