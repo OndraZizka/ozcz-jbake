@@ -1,0 +1,12 @@
+date=2050-01-01
+title=Image Paths Test, in a subdir
+@@@
+
+Image Paths Test, in a subdir
+================
+
+[* texy-64_med_med.gif *]    <-- texy-64_med_med.gif
+
+[* ../texy-64_med_med.gif *]  <-- ../texy-64_med_med.gif
+
+[* /favicon.ico *]           <-- /favicon.ico
