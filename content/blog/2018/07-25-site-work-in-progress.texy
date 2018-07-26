@@ -1,0 +1,14 @@
+date: 2050-01-01
+@@@
+
+Work on this site in progress
+#############################
+
+After about a year offline, the site was just re-born from the former platform.
+ The current solution still has a few annoyances, but I'm fixing it :)
+
+The most important thing is so sort out the pages that I brought from the former site.
+ That needs me to implement auto-generated directory indexes in the JBake platform this uses.
+ Until then, the blog below will contain all pages.
+
+Another thing is the duplicated titles. That will go away soon.
