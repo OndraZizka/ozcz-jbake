@@ -11,18 +11,18 @@
     <div id="pocitadla" class="" style="position: relative; top: -64px; left: 4xp;">
         <!--
         <div class="pocitadlo" id="navrcholu">
-            <script src="http://c1.navrcholu.cz/code?site=116753;t=lb14" type="text/javascript"></script><noscript><div><a target="_blank" href="http://navrcholu.cz/"><img src="http://c1.navrcholu.cz/hit?site=116753;t=lb14;ref=;jss=0" width="14" height="14" alt="Statistiky NaVrcholu.cz" style="border:none" /></a></div></noscript>
+            <script src="https://c1.navrcholu.cz/code?site=116753;t=lb14" type="text/javascript"></script><noscript><div><a target="_blank" href="https://navrcholu.cz/"><img src="https://c1.navrcholu.cz/hit?site=116753;t=lb14;ref=;jss=0" width="14" height="14" alt="Statistiky NaVrcholu.cz" style="border:none" /></a></div></noscript>
         </div><!- - Driv: code?site=79008;t=lb14" -->
         <div class="pocitadlo" id="toplist">
-            <a target="_blank" href="http://toplist.cz/stat/117144"><script language="JavaScript" type="text/javascript">
-                document.write('<img src="http://toplist.cz/count.asp?id=117144&amp;start=806&amp;logo=2&amp;http='
+            <a target="_blank" href="https://toplist.cz/stat/117144"><script language="JavaScript" type="text/javascript">
+                document.write('<img src="https://toplist.cz/count.asp?id=117144&amp;start=806&amp;logo=2&amp;http='
                         +escape(document.referrer)+'&amp;wi='+escape(window.screen.width)+'&he='+escape(window.screen.height)
                         +'&amp;cd='+escape(window.screen.colorDepth)+'" width="36" height="14" border="0" alt="TOPlist statistiky" />');
-            </script><noscript><img src="http://toplist.cz/count.asp?id=117144&amp;start=1&amp;logo=2" border="0" alt="TOPlist statistiky" width="36" height="14"/></noscript></a>
+            </script><noscript><img src="https://toplist.cz/count.asp?id=117144&amp;start=1&amp;logo=2" border="0" alt="TOPlist statistiky" width="36" height="14"/></noscript></a>
         </div>
         <!-- ClustrMaps.com -->
         <div class="pocitadlo" id="clustrmaps">
-            <a href="http://www4.clustrmaps.com/user/64952149"><img src="http://www4.clustrmaps.com/stats/maps-no_clusters/ondra.zizka.cz--thumb.jpg" alt="0" border="0" width="180" height="117" /></a>
+            <a href="https://www4.clustrmaps.com/user/64952149"><img src="https://www4.clustrmaps.com/stats/maps-no_clusters/ondra.zizka.cz--thumb.jpg" alt="0" border="0" width="180" height="117" /></a>
         </div>
     </div>
 
