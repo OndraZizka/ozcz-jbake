@@ -7,15 +7,15 @@
  *
  * @author
  * Alex Gorbatchev
- * 
+ *
  * @copyright
  * Copyright (C) 2004-2009 Alex Gorbatchev.
  *
  * Licensed under a GNU Lesser General Public License.
  * http://creativecommons.org/licenses/LGPL/2.1/
  *
- * SyntaxHighlighter is donationware. You are allowed to download, modify and distribute 
- * the source code in accordance with LGPL 2.1 license, however if you want to use 
+ * SyntaxHighlighter is donationware. You are allowed to download, modify and distribute
+ * the source code in accordance with LGPL 2.1 license, however if you want to use
  * SyntaxHighlighter on your site or include it in your product, you must donate.
  * http://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
  */
@@ -56,5 +56,5 @@ SyntaxHighlighter.brushes.Sql = function()
 };
 
 SyntaxHighlighter.brushes.Sql.prototype	= new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Sql.aliases	= ['sql'];
+SyntaxHighlighter.brushes.Sql.aliases	= ['sql','mavenlog','log','properties','xpath'];
 
