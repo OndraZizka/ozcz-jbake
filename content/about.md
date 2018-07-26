@@ -38,4 +38,15 @@ But I didn't have time to keep up with ever changing environment, so I migrated 
 If you're looking for the former content, I will add it here once I add JTexy support to JBake.
 *Edit:* I have added JTexy support to JBake :) However, it doesn't generate directory indexes.
 I need to implement [this](https://github.com/jbake-org/jbake/issues/497).
-Until then, the pages are only available in the loooong listing in the [home page](/).
+Until then, the pages are only available in the loooong listing in the [home page](/),
+and some links here, some of them in czech:
+
+* [Programování](pages/programovani/)
+* [Programování - Java](pages/programovani/java/)
+  * [Programování - Java web](pages/programovani/java/web/)
+    * [Programování - Apache Wicket](pages/programovani/java/web/wicket/)
+* [Programování - Artificial Intelligence](pages/programovani/artificial_intelligence/)
+  * [Programování - Neural Networks in SQL Stored Procedures](pages/programovani/neural_networks_in_sql_stored_procedures/)
+* [Programování - SQL](pages/programovani/sql/)
+* [Programování - Transport Schedule Searching](pages/programovani/transport_schedule_search/)
+
