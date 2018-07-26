@@ -33,7 +33,8 @@ I am. For more info, see:
 ## About this site
 
 Once I had a spectacular site, a blogging platform written in PHP, then I migrated to Java, hosted on OpenShift.
-But I didn't have time to keep up with ever changing environment, so I migrated to [JBake](https://jbake.org) and static files.
+But I didn't have time to keep up with ever changing environment,
+so I migrated to [JBake](https://jbake.org) and [static files](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/).
 
 If you're looking for the former content, I will add it here once I add JTexy support to JBake.
 *Edit:* I have added JTexy support to JBake :) However, it doesn't generate directory indexes.
