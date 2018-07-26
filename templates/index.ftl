@@ -5,22 +5,24 @@
 	<#include "menu.ftl">
 
 	<div class="page-header">
-		<h1>Recent posts</h1>
+		<h2>Recent posts</h2>
 	</div>
-	<#list posts as post>
-  		<#if (post.status == "published")>
-  			<a href="${post.uri}"><h3>${post.title}</h3></a>
 
-  			<div class="date"><em>${post.date?string("yyyy-MM-dd")}</em></div>
+    <#assign MAX_POSTS = 30>
+	<#list posts[0..*MAX_POSTS] as post>
+        <#if (post.status == "published")>
+            <div class="document post">
+                <div class="date"><em>${post.date?string("yyyy-MM-dd")}</em></div>
 
-  			<div class="doc-body">${post.body}</div>
+                <a href="${post.uri}"><h3>${post.title}</h3></a>
+
+                <div class="doc-body">${post.body}</div>
+            </div>
+        	<hr />
   		</#if>
   	</#list>
 
-	<hr />
 
-	<!--
 	<div>Older posts are available in the <a href="${content.rootpath}${config.archive_file}">archive</a>.</div>
-	-->
 
 <#include "footer.ftl">

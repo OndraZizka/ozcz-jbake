@@ -55,8 +55,19 @@ a { color: #0366d6; }
   margin: 0;
   border-bottom: none;
 }
-.page-header h1 {
+.page-header h1,
+.page-header h2 {
   border-bottom: 1px solid limegreen; /* dodgerblue */
-  line-height: 1.2;
 }
-.date em {font-style: italic;}
+.page-header h1 { line-height: 1.2; }
+
+/** Position the date left of the title. */
+.document.post .date {
+    font-style: italic;
+    float: left;
+    position: relative;
+    left: -80px;
+    display: inline-block;
+    width: 1px;
+    top: 3px;
+}
