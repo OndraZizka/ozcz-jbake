@@ -87,14 +87,21 @@ a { color: #0366d6; }
     margin-top: 0;
 }
 
-#banner {
+#wrap > .container { padding-top: 51px; }  /* No space between banner and menu. */
+#banner, .banner {
     background: url("../img/bgHeader-BrnoVyhledHady.jpg");
-    background-position: 37% -261px;
+    background-position: 46% -261px;
     background-attachment: fixed;
+    background-size: cover;
     height: 200px;
     margin: 0 0 1ex 0;
 }
-#wrap > .container { padding-top: 51px; }  /* No space between banner and menu. */
+
+.banner.post-separator {
+    background-position: center;
+    height: 80px;
+}
+
 
 /** Only show "lead paragraph" (first few elements) in the index page? */
 .document-list .document .doc-body > * ~ * ~ * ~ * ~ * ~ * {
