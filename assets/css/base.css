@@ -81,3 +81,37 @@ a { color: #0366d6; }
     margin: 1em 0;
     padding: 0;
 }
+
+.doc-body li {
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+#banner {
+    background: url("../img/bgHeader-BrnoVyhledHady.jpg");
+    background-position: 37% -261px;
+    background-attachment: fixed;
+    height: 200px;
+    margin: 0 0 1ex 0;
+}
+#wrap > .container { padding-top: 51px; }  /* No space between banner and menu. */
+
+/** Only show "lead paragraph" (first few elements) in the index page? */
+.document-list .document .doc-body > * ~ * ~ * ~ * ~ * ~ * {
+    display: none;
+}
+
+/** Reduce the height of code blocks */
+.document-list .document .doc-body pre { max-height: 100px; overflow: auto; }
+
+/* Syntaxhighlighter box */
+.container .document-list.recent .document .doc-body .syntaxhighlighter div.lines { max-height: 140px; overflow: auto; }
+
+/*body { position: relative; }*/
+#pocitadla {
+    position: relative; top: -64px; right: 4px;
+    /* position: absolute; bottom: 0px; right: 0px; */
+    /*position: fixed; bottom: 0px; right: 0px;*/
+    /* position: relative; */
+}
+/*#pocitadla .pocitadlo #clustrmaps { position: absolute; bottom: 0px; right: 0px; margin: 0px auto; }*/

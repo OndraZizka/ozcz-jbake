@@ -4,6 +4,8 @@
 
 	<#include "menu.ftl">
 
+    <div id="banner"></div>
+
 	<div class="page-header">
 		<h2>Recent posts</h2>
 	</div>
@@ -19,7 +21,10 @@
 
                 <a href="${post.uri}"><h3>${post.title}</h3></a>
 
-                <div class="doc-body">${post.body}</div>
+                <div class="doc-body">
+                    ${post.body}
+                </div>
+                ... <a href="${post.uri}"> read more &rarr;</a>
             </div>
         	<hr class="post-separator" />
   		</#if>
