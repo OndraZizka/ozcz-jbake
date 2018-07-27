@@ -1,15 +1,18 @@
 <#include "header.ftl">
 
-	<#include "menu.ftl">
+    <#include "menu.ftl">
 
-	<div class="page-header">
-		<h1>${content.title} - Ondřej Žižka</h1>
-	</div>
+    <div class="document-${content.type!}">
+        <div class="page-header">
+            <h1>${content.title}</h1>
+        </div>
+        <div class="date"><em>${content.date?string("yyyy-MM-dd")}</em></div>
+        <div class="doc-body">${content.body}</div>
 
-	<div class="date"><em>${content.date?string("yyyy-MM-dd")}</em></div>
+        <!-- Rating widget -->
+        <div class="rw-ui-container"></div>
+    </div>
 
-	<div class="doc-body">${content.body}</div>
-
-	<hr />
+    <hr />
 
 <#include "footer.ftl">
