@@ -7,15 +7,15 @@
  *
  * @author
  * Alex Gorbatchev
- * 
+ *
  * @copyright
  * Copyright (C) 2004-2009 Alex Gorbatchev.
  *
  * Licensed under a GNU Lesser General Public License.
  * http://creativecommons.org/licenses/LGPL/2.1/
  *
- * SyntaxHighlighter is donationware. You are allowed to download, modify and distribute 
- * the source code in accordance with LGPL 2.1 license, however if you want to use 
+ * SyntaxHighlighter is donationware. You are allowed to download, modify and distribute
+ * the source code in accordance with LGPL 2.1 license, however if you want to use
  * SyntaxHighlighter on your site or include it in your product, you must donate.
  * http://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
  */
@@ -28,8 +28,8 @@ SyntaxHighlighter.brushes.Xml = function()
 			tag = new XRegExp('(&lt;|<)[\\s\\/\\?]*(?<name>[:\\w-\\.]+)', 'xg').exec(code),
 			result = []
 			;
-		
-		if (match.attributes != null) 
+
+		if (match.attributes != null)
 		{
 			var attributes,
 				regex = new XRegExp('(?<name> [\\w:\\-\\.]+)' +
@@ -37,7 +37,7 @@ SyntaxHighlighter.brushes.Xml = function()
 									'(?<value> ".*?"|\'.*?\'|\\w+)',
 									'xg');
 
-			while ((attributes = regex.exec(code)) != null) 
+			while ((attributes = regex.exec(code)) != null)
 			{
 				result.push(new constructor(attributes.name, match.index + attributes.index, 'color1'));
 				result.push(new constructor(attributes.value, match.index + attributes.index + attributes[0].indexOf(attributes.value), 'string'));
@@ -51,7 +51,7 @@ SyntaxHighlighter.brushes.Xml = function()
 
 		return result;
 	}
-	
+
 	this.regexList = [
 		{ regex: new XRegExp('(\\&lt;|<)\\!\\[[\\w\\s]*?\\[(.|\\s)*?\\]\\](\\&gt;|>)', 'gm'),			css: 'color2' },	// <![ ... [ ... ]]>
 		{ regex: new XRegExp('(\\&lt;|<)!--\\s*.*?\\s*--(\\&gt;|>)', 'gm'),								css: 'comments' },	// <!-- ... -->
@@ -60,4 +60,4 @@ SyntaxHighlighter.brushes.Xml = function()
 };
 
 SyntaxHighlighter.brushes.Xml.prototype	= new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Xml.aliases	= ['xml', 'xhtml', 'xslt', 'html', 'xhtml'];
+SyntaxHighlighter.brushes.Xml.aliases	= ['xml', 'xhtml', 'xslt', 'html', 'xhtml', 'ibatis'];

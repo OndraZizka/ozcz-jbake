@@ -56,5 +56,5 @@ SyntaxHighlighter.brushes.Sql = function()
 };
 
 SyntaxHighlighter.brushes.Sql.prototype	= new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Sql.aliases	= ['sql','mavenlog','log','properties','xpath'];
+SyntaxHighlighter.brushes.Sql.aliases	= ['sql','mavenlog','log','properties','xpath', 'exception'];
 
