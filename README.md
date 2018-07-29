@@ -5,7 +5,7 @@ How to build
 JBAKE_BASED=$HOME/uw/oz.cz/jbake-based
 
 ## Run the Texy converter
-docker run --rm -p 8022:80 ondrazizka/texy-service:latest
+docker run  --name texy-service --rm -p 8022:80 ondrazizka/texy-service:latest
 cd $JBAKE_BASED;
 ## Remove the old output and rebuild all
 rm -rf output/ cache/ && jbake -b

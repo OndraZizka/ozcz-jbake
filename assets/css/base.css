@@ -56,7 +56,21 @@ body { background: linear-gradient(350deg,#fff,#fff,#eaeaea) no-repeat; }
 
 
 /* Ondra Zizka styles */
+
+/** General */
 a { color: #0366d6; }
+
+
+#wrap > .container { padding-top: 51px; }  /* No space between banner and menu. */
+#banner, .banner {
+    background: url("../img/bgHeader-BrnoVyhledHady.jpg");
+    background-position: 46% -261px;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    margin: 0 0 1ex 0;
+}
+
 .page-header {
   padding-bottom: 0;
   margin: 0;
@@ -69,7 +83,7 @@ a { color: #0366d6; }
 .page-header h1 { line-height: 1.2; }
 
 /** Position the date left of the title. */
-.document.post .date {
+.document .date {
     font-style: italic;
     float: left;
     position: relative;
@@ -79,7 +93,18 @@ a { color: #0366d6; }
     top: 3px;
 }
 
-/** Posts separator. */
+/** --- General document body styles. */
+.document .doc-body li {
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+/** JBake takes first top heading as a title if not set in metadata.
+    But then it appears twice. This deduplicates it.  */
+.document .doc-body .jbakeExtractedTitle { display: none; }
+
+
+/** Posts separator in index. */
 .document-list hr {
     display: block;
     height: 1px;
@@ -88,26 +113,19 @@ a { color: #0366d6; }
     margin: 1em 0;
     padding: 0;
 }
-
-.doc-body li {
-    line-height: 1.2;
-    margin-top: 0;
-}
-
-#wrap > .container { padding-top: 51px; }  /* No space between banner and menu. */
-#banner, .banner {
-    background: url("../img/bgHeader-BrnoVyhledHady.jpg");
-    background-position: 46% -261px;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 200px;
-    margin: 0 0 1ex 0;
-}
-
-.banner.post-separator {
+.document-list .banner.post-separator {
     background-position: center;
     height: 80px;
 }
+
+
+/** --- The following reduces the height of a post in the index page. --- */
+/** Only show "lead paragraph" (first few elements) in the index page? */
+.document-list .document .doc-body > * ~ * ~ * ~ * ~ * ~ * { display: none; }
+/** Reduce the height of code blocks */
+.document-list .document .doc-body pre { max-height: 100px; overflow: auto; }
+/* Syntaxhighlighter box */
+.document-list.recent .document .doc-body .syntaxhighlighter div.lines { max-height: 140px; overflow: auto; }
 
 
 /** Stars rating, social sharing - put to the same line. */
@@ -118,17 +136,6 @@ a { color: #0366d6; }
     margin-right: 2em;
 }
 
-/** Only show "lead paragraph" (first few elements) in the index page? */
-.document-list .document .doc-body > * ~ * ~ * ~ * ~ * ~ * {
-    display: none;
-}
-
-/** Reduce the height of code blocks */
-.document-list .document .doc-body pre { max-height: 100px; overflow: auto; }
-
-/* Syntaxhighlighter box */
-.container .document-list.recent .document .doc-body .syntaxhighlighter div.lines { max-height: 140px; overflow: auto; }
-
 /*body { position: relative; }*/
 #pocitadla {
     position: relative; top: -64px; right: 4px;
@@ -137,4 +144,5 @@ a { color: #0366d6; }
     /* position: relative; */
 }
 /*#pocitadla .pocitadlo #clustrmaps { position: absolute; bottom: 0px; right: 0px; margin: 0px auto; }*/
+
 
