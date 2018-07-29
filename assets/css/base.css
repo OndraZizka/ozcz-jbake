@@ -40,10 +40,17 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
+/* Style tweaks inspired by https://chromeunboxed.com/news/new-google-home-features-IO-available/ */
+body { background: linear-gradient(350deg,#fff,#fff,#eaeaea) no-repeat; }
+
 #wrap > .container {
+  background: white;
+  box-shadow: 0 0px 7px #ccc;
   padding-top: 60px;
 }
-.container .credit {
+.navbar-default { box-shadow: gray 0px 0px 2px; }
+
+#wrap > .container .credit {
   margin: 20px 0;
 }
 
@@ -122,3 +129,4 @@ a { color: #0366d6; }
     /* position: relative; */
 }
 /*#pocitadla .pocitadlo #clustrmaps { position: absolute; bottom: 0px; right: 0px; margin: 0px auto; }*/
+
