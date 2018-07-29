@@ -18,8 +18,8 @@
 
             <li><a href="${content.rootpath!}about.html">About Me</a></li>
             <li><a href="${content.rootpath!}${config.feed_file}">RSS feed</a></li>
+            <#--
             <li><a href="${content.rootpath!}${config.sitemap_file}">Sitemap</a></li>
-            <!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
