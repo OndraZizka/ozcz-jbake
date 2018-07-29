@@ -83,7 +83,7 @@ Photo-2017-05-27-15-45-46_4318.jpg
             <#items as post>
             <#if (post.status == "published")>
                 <div class="document post">
-                    <div class="date"><em>${post.date?string("yyyy-MM-dd")}</em></div>
+                    <div class="date"><span>${post.date?string("yyyy-MM-dd")}</span></div>
 
                     <a href="${post.uri}"><h3>${post.title}</h3></a>
 

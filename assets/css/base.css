@@ -64,7 +64,7 @@ a { color: #0366d6; }
 #wrap > .container { padding-top: 51px; }  /* No space between banner and menu. */
 #banner, .banner {
     background: url("../img/bgHeader-BrnoVyhledHady.jpg");
-    background-position: 46% -261px;
+    background-position: 46% -320px;
     background-attachment: fixed;
     background-size: cover;
     height: 200px;
@@ -83,14 +83,17 @@ a { color: #0366d6; }
 .page-header h1 { line-height: 1.2; }
 
 /** Position the date left of the title. */
+.document { position: relative; }
 .document .date {
-    font-style: italic;
-    float: left;
-    position: relative;
-    left: -80px;
-    display: inline-block;
-    width: 1px;
+    position: absolute;
+    left: -90px;
     top: 3px;
+
+    border: 1px solid #e1e1e1;
+    background-color: #fbffd6;
+    box-shadow: gray 0 0 1px;
+    border-radius: 5px;
+    padding: 2px 1ex;
 }
 
 /** --- General document body styles. */
