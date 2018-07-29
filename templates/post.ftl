@@ -9,10 +9,9 @@
         <div class="date"><em>${content.date?string("yyyy-MM-dd")}</em></div>
         <div class="doc-body">${content.body}</div>
 
-        <!-- Rating widget -->
-        <div class="rw-ui-container"></div>
     </div>
-
     <hr />
+    <!-- Rating widget -->
+    <div class="rw-ui-container"></div>
 
 <#include "footer.ftl">

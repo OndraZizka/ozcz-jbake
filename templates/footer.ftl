@@ -1,8 +1,48 @@
 
+        <#if false> Sharexy.com - Doesn't support HTTPS.
+        <div id='shr_723771'><script type='text/javascript'>(function(w) { if (!w.SharexyWidget) { w.SharexyWidget = {};} if (!w.SharexyWidget.Params) { w.SharexyWidget.Params = {}; }
+        w.SharexyWidget.Params['723771'] = {'code_id':'723771','publisher_key':'undefined','design':'classic','layout_static':'h','type':'st','mode_float':'','size_float':'55','size_static':'55','buzz':'1',
+            'services':['facebook', 'google_plus', 'twitter', 'linkedin', 'reddit', 'buffer', 'pocket', 'print_page'],
+            'url':'current','allways_show_ads':'0','show_ads_sharing':'0','show_ads_cursor':'0','bg_float':'1','bg_color':'#ffffff','labels':'','counters':'0', 'counters_float':'0'} })(window);</script>
+        <script type='text/javascript' src='https://shuttle.sharexy.com/LoaderLite.js'></script></div><a href='https://sharexy.com/'><img src='https://sharexy.com/statpixel.png' style='border: 0' /></a>
+        </#if>
+
+        <!-- AddToAny BEGIN -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_google_plus"></a>
+            <a class="a2a_button_google_bookmarks"></a>
+            <a class="a2a_button_google_classroom"></a>
+            <a class="a2a_button_linkedin"></a>
+            <a class="a2a_button_reddit"></a>
+            <a class="a2a_button_buffer"></a>
+            <a class="a2a_button_trello"></a>
+            <a class="a2a_button_slashdot"></a>
+            <a class="a2a_button_hacker_news"></a>
+            <a class="a2a_button_dzone"></a>
+            <a class="a2a_button_pinterest"></a>
+            <a class="a2a_button_vk"></a>
+            <a class="a2a_button_digg"></a>
+            <a class="a2a_button_copy_link"></a>
+            <a class="a2a_button_pocket"></a>
+        </div>
+        <script>
+            var a2a_config = a2a_config || {};
+            a2a_config.linkname = "Ondřej Žižka";
+            a2a_config.linkurl = "https://www.zizka.ch/";
+            a2a_config.num_services = 18;
+        </script>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <!-- AddToAny END -->
+
+        <div style="clear: both; height: 1ex;"></div>
+
         <!-- Facebook comments -->
         <#if content.uri??>
             <#assign url = content.uri?starts_with(config.site_host)?then(content.uri, config.site_baseUrl + content.uri) >
-            <div class="fb-comments" data-href="${url}" data-width="800" data-numposts="5"></div>
+            <div class="fb-comments" data-href="${url}" data-width="900" data-numposts="5"></div>
         </#if>
 
     </div>
