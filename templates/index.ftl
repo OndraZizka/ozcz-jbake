@@ -61,12 +61,12 @@ IMAG6409.jpg
 Photo-2017-05-27-15-45-46_4318.jpg
 </#assign>
 <#assign photos = photos?split('\\n', 'rmc') >
-<script type="text/javascript">
-    var photos = [ <#list photos as photo> '${photo}', </#list> ];
-</script>
 <#assign nextRandom = .now?string["HHmmssSSS"]?number>
 
 <#include "header.ftl">
+    <#--
+    <script type="text/javascript"> var photos = [ <#list photos as photo> '${photo}', </#list> ]; </script>
+    -->
 
 	<#include "menu.ftl">
 
