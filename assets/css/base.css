@@ -152,9 +152,10 @@ a { color: #0366d6; }
 
 /** Stars rating, social sharing - put to the same line. */
 .a2a_kit { float: left; }
+.donateButton  { float: left; margin-top: 4px; margin-right: 2em; }
 .rw-ui-container {
     float: left;
-    margin-top: 4px;
+    margin-top: 7px;
     margin-right: 2em;
 }
 
