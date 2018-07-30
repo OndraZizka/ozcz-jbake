@@ -42,12 +42,12 @@ I need to implement [this](https://github.com/jbake-org/jbake/issues/497).
 Until then, the pages are only available in the loooong listing in the [home page](/),
 and some links here, some of them in czech:
 
-* [Programování](pages/programovani/)
-* [Programování - Java](pages/programovani/java/)
-  * [Programování - Java web](pages/programovani/java/web/)
-    * [Programování - Apache Wicket](pages/programovani/java/web/wicket/)
-* [Programování - Artificial Intelligence](pages/programovani/artificial_intelligence/)
-  * [Programování - Neural Networks in SQL Stored Procedures](pages/programovani/neural_networks_in_sql_stored_procedures/)
-* [Programování - SQL](pages/programovani/sql/)
-* [Programování - Transport Schedule Searching](pages/programovani/transport_schedule_search/)
+* [Programming](pages/programming/)
+* [Programming - Java](pages/programming/java/)
+  * [Programming - Java web](pages/programming/java/web/)
+    * [Programming - Apache Wicket](pages/programming/java/web/wicket/)
+* [Programming - Artificial Intelligence](pages/programming/artificial_intelligence/)
+  * [Programming - Neural Networks in SQL Stored Procedures](pages/programming/neural_networks_in_sql_stored_procedures/)
+* [Programming - SQL](pages/programming/sql/)
+* [Programming - Transport Schedule Searching](pages/programming/transport_schedule_search/)
 
