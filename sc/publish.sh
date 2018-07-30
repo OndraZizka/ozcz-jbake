@@ -19,10 +19,11 @@ docker run -d --name texy-service --rm -p 8022:80 ondrazizka/texy-service:latest
 
 cd $JBAKE_BASED;
 ## Remove the old output and rebuild all
-rm -rf output/ cache/   \
-  && echo -e "\n=====================================\n  Baking!\n=====================================\n" \
-  && jbake -b
-
+if [ "$1" != "noBake" ] ; then
+    rm -rf output/ cache/   \
+      && echo -e "\n=====================================\n  Baking!\n=====================================\n" \
+      && jbake -b
+fi
 
 ## Update the web
 TARGET_DIR=../github.io/
@@ -38,7 +39,8 @@ if [ "" == "$LAST_COMMIT_USED" ] ; then
 elif [ "$LAST_COMMIT_USED" == "$THIS_COMMIT_USED" ] ; then
     SUMMARY="None commited - maybe only content was changed."
 else
-    SUMMARY=`git --git-dir $JBAKE_BASED/.git log --pretty=%B "$LAST_COMMIT_USED"..HEAD | sed 's#^# * \0#g'`;
+    ##  Git messages from the web source dir;  remove empty lines and add bullets.
+    SUMMARY=`git --git-dir $JBAKE_BASED/.git log --pretty=%B "$LAST_COMMIT_USED"..HEAD | grep -v -e '^[[:space:]]*$' | sed 's#^# * \0#g'`;
 fi
 echo "Changes in the web sources from last commit used $LAST_COMMIT_USED till current commit $THIS_COMMIT_USED:"
 echo "$SUMMARY"
@@ -50,7 +52,7 @@ rm -rf *
 #cd $TARGET_DIR
 cp -rf $JBAKE_BASED/output/* ./
 
-git commit . -m "$SUMMARY$'\n'LastCommit:$THIS_COMMIT_USED"
+git commit . -m "$SUMMARY"$'\n'"LastCommit:$THIS_COMMIT_USED"
 git push origin master
 
 ## Tested, should work.
