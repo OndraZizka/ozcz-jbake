@@ -85,7 +85,7 @@ Photo-2017-05-27-15-45-46_4318.jpg
                 <div class="document post">
                     <div class="date"><span>${post.date?string("yyyy-MM-dd")}</span></div>
 
-                    <a href="${post.uri}"><h3>${post.title}</h3></a>
+                    <a href="${post.uri}"><h2 class="title">${post.title}</h2></a>
 
                     <div class="doc-body">
                         ${post.body}

@@ -50,7 +50,7 @@ body { background: linear-gradient(350deg,#fff,#fff,#eaeaea) no-repeat; }
 }
 .navbar-default { box-shadow: gray 0px 0px 2px; }
 
-#wrap > .container .credit {
+#footer > .container .credit {
   margin: 20px 0;
 }
 
@@ -76,18 +76,37 @@ a { color: #0366d6; }
   margin: 0;
   border-bottom: none;
 }
+.page-header h1 { line-height: 1.2; }
 .page-header h1,
 .page-header h2 {
   border-bottom: 1px solid limegreen; /* dodgerblue */
 }
-.page-header h1 { line-height: 1.2; }
+
+.document .title { font-size: 2.5em; }
+
+/** No top margin for the first heading.
+.document .doc-body > h1:not(.jbakeExtractedTitle) { margin-top: 0; }
+.document .doc-body > h2:not(.jbakeExtractedTitle) { margin-top: 0; }
+.document .doc-body > h3:not(.jbakeExtractedTitle) { margin-top: 0; }
+.document .doc-body > h1:nth-child(n+1) { margin-top: 20px; }
+.document .doc-body > h2:nth-child(n+1) { margin-top: 20px; }
+.document .doc-body > h3:nth-child(n+1) { margin-top: 20px; }
+ */
+/** No top margin for the first heading, attempt 2. */
+.document .doc-body > *:nth-child(n+1),
+.document .doc-body > .jbakeExtractedTitle + h1,
+.document .doc-body > .jbakeExtractedTitle + h2,
+.document .doc-body > .jbakeExtractedTitle + h3 { margin-top: 0; }
+
+.doc-body h1, .doc-body h2, .doc-body h3, .doc-body h4, .doc-body h5, .doc-body h6 { margin-bottom: 10px; }
+
 
 /** Position the date left of the title. */
 .document { position: relative; }
 .document .date {
     position: absolute;
-    left: -90px;
-    top: 3px;
+    left: -92px;
+    top: 12px;
 
     border: 1px solid #e1e1e1;
     background-color: #fbffd6;
@@ -124,7 +143,7 @@ a { color: #0366d6; }
 
 /** --- The following reduces the height of a post in the index page. --- */
 /** Only show "lead paragraph" (first few elements) in the index page? */
-.document-list .document .doc-body > * ~ * ~ * ~ * ~ * ~ * { display: none; }
+.document-list .document .doc-body > * + * + * + * + * ~ * { display: none; }
 /** Reduce the height of code blocks */
 .document-list .document .doc-body pre { max-height: 100px; overflow: auto; }
 /* Syntaxhighlighter box */

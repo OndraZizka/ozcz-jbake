@@ -77,7 +77,7 @@ Taken from GitHub's markdown-body.
 .doc-body h1,.doc-body h2,.doc-body h3,.doc-body h4,.doc-body h5,.doc-body h6 {
     margin-top:24px;
     margin-bottom:16px;
-    font-weight:600;
+    /*font-weight:600; I like 500, more lightweight */
     line-height:1.25
 }
 .doc-body h1 .octicon-link,.doc-body h2 .octicon-link,.doc-body h3 .octicon-link,.doc-body h4 .octicon-link,.doc-body h5 .octicon-link,.doc-body h6 .octicon-link {
