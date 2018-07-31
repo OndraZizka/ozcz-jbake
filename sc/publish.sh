@@ -15,7 +15,7 @@ if [ -f $JBAKE_BASED/content/pages/.jbakeignore ] ; then
 fi
 
 ## Run the Texy converter
-docker stop texy-service
+docker stop texy-service || true
 docker run -d --name texy-service --rm -p 8022:80 ondrazizka/texy-service:latest
 
 cd $JBAKE_BASED;
@@ -44,7 +44,7 @@ else
     ##  Git messages from the web source dir;  remove empty lines and add bullets.
     SUMMARY_WEB=`git --git-dir $JBAKE_BASED/.git log --pretty=%B "$LAST_WEB_COMMIT"..HEAD | grep -v -e '^[[:space:]]*$' | sed 's#^# * \0#g'`;
 fi
-echo "Changes in the web sources from last commit used $LAST_WEB_COMMIT till current commit $THIS_WEB_COMMIT:"
+echo -e "\nChanges in the web sources from last commit used $LAST_WEB_COMMIT till current commit $THIS_WEB_COMMIT:"
 echo "$SUMMARY_WEB"
 
 
@@ -59,18 +59,19 @@ else
     ##  Git messages from the web source dir;  remove empty lines and add bullets.
     SUMMARY_CONTENT=`git --git-dir $WEB_CONTENT_REPO/.git log --pretty=%B "$LAST_CONTENT_COMMIT"..HEAD | grep -v -e '^[[:space:]]*$' | sed 's#^# * \0#g'`;
 fi
-echo "Changes in the content from last commit $LAST_CONTENT_COMMIT till current commit $THIS_CONTENT_COMMIT:"
-echo "SUMMARY_CONTENT"
+echo -e "\nChanges in the content from last commit $LAST_CONTENT_COMMIT till current commit $THIS_CONTENT_COMMIT:"
+echo "$SUMMARY_CONTENT"
 
 
-echo "Deleting old files, overwriting with new ones.";
+echo -e "\n=====================================\n  Deleting old files, overwriting with new ones.\n=====================================\n" \
 rm -rf *
 #cd -
 #cp -rf output/* $TARGET_DIR
 #cd $TARGET_DIR
 cp -rf $JBAKE_BASED/output/* ./
 
-git commit . -m "$SUMMARY_WEB"$'\n'"LastCommit.Web:$THIS_WEB_COMMIT"$'\n'"$SUMMARY_CONTENT"$'\n'"LastCommit.Content:$THIS_CONTENT_COMMIT"
+git add .
+git commit -m "$SUMMARY_WEB"$'\n'"LastCommit.Web:$THIS_WEB_COMMIT"$'\n'"$SUMMARY_CONTENT"$'\n'"LastCommit.Content:$THIS_CONTENT_COMMIT"
 git push origin master
 
 ## Tested, should work.
